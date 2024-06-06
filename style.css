@@ -44,8 +44,8 @@ img {
 .profile-card {
   background-color: hsl(0, 0%, 12%);
   width: 400px;
-  height: 550px;
-  padding-bottom: 2s0px;
+  height: 600px;
+  padding-bottom: 20px;
   border-radius: 20px;
   display: flex;
   justify-content: center;
@@ -67,11 +67,46 @@ img {
   margin-bottom: 15px;
 }
 
-.link-box p {
+.link-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.link-box a {
   background-color: hsl(0, 0%, 20%);
   padding: 10px;
   margin: 10px;
   border-radius: 5px;
   text-align: center;
   width: 300px;
+  color: hsl(0, 0%, 100%);
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.link-box a:hover {
+  background-color: hsl(75, 94%, 57%);
+  color: hsl(0, 0%, 8%);
+  font-size: 700;
+}
+
+.attribution {
+  margin-top: 30px;
+}
+
+.attribution a {
+  text-decoration: none;
+}
+
+@media (max-width: 450px) {
+  .profile-card {
+    width: 80%;
+    height: auto;
+  }
+
+  .link-box a {
+    width: 65vw;
+    text-align: center;
+  }
 }
